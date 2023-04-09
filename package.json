@@ -1,0 +1,13 @@
+{
+  "name": "c-chat",
+  "version": "2.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node server.js",
+    "dev" : "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Laxman Pal",
+  "license": "ISC"
+}
