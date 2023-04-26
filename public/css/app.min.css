@@ -1378,11 +1378,8 @@
 }
 .auth-logo .logo {
   margin: 0 auto;
-}
-.auth-logo .logo-dark {
   display: block;
-}
-.auth-logo .logo-light {
-  display: none;
+  width: 250px;
+  height: 100%;
 }
 /*# sourceMappingURL=app.min.css.map */
