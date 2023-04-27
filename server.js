@@ -17,20 +17,20 @@ app.set("view engine", "ejs");
 app.use(require("./routes/auth"));
 app.use(require("./routes/chat"));
 
-// mongoose
-//   .connect(
-//     `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cchat.cgqscui.mongodb.net/${process.env.DB_NAME}`
-//   )
-//   .then(() => {
-//     console.log("MongoDB Connected");
-//     app.listen(port, (req, res) => {
-//       console.log(`Server is running at http://localhost:${port}`);
-//     });
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
+mongoose
+  .connect(
+    `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cchat.cgqscui.mongodb.net/${process.env.DB_NAME}`
+  )
+  .then(() => {
+    console.log("MongoDB Connected");
+    app.listen(port, (req, res) => {
+      console.log(`Server is running at http://localhost:${port}`);
+    });
+  })
+  .catch((error) => {
+    console.log(error);
+  });
 
-app.listen(port, (req, res) => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+// app.listen(port, (req, res) => {
+//   console.log(`Server is running at http://localhost:${port}`);
+// });

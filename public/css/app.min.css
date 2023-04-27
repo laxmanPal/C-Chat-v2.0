@@ -1383,3 +1383,7 @@
   height: 100%;
 }
 /*# sourceMappingURL=app.min.css.map */
+
+.account-pages {
+  background-image: url(../images/bg/pattern-05.png);
+}
